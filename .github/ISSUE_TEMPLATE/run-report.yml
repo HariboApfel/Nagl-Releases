@@ -1,0 +1,40 @@
+name: Run report
+description: A title that crashed, hung, failed on the GPU, was refused, looked wrong or ran slowly (the launcher's `issue <run>` fills this the same way)
+title: "[outcome] Title: run id"
+labels: ["run-report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The launcher writes everything below from a run folder: `nagl issue <run>` previews it, creates the issue and shows the archive to attach. By hand, fill the same fields and attach `<run>.report.zip` (drag it into a comment).
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened, what you expected, what you did before it.
+    validations:
+      required: true
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Outcome
+      options: [crash, hang, gpu-error, visual, performance, refused, other]
+    validations:
+      required: true
+  - type: input
+    id: fingerprint
+    attributes:
+      label: Fingerprint
+      description: The `fingerprint:` line of report.md (title, DLL set ledger, top backtrace frames or refusal text).
+  - type: textarea
+    id: report
+    attributes:
+      label: Report
+      description: report.md from the run folder (engine, bottle, DLL set and ledger, config keys with sources, machine facts, outcome, the explanation, the top backtrace frames, the last 50 lines of each log, the counters summary).
+      render: markdown
+  - type: checkboxes
+    id: archive
+    attributes:
+      label: Archive
+      options:
+        - label: "`<run>.report.zip` attached to a comment (no save games, no Steam credential files; screenshots only if chosen)"

@@ -1,0 +1,24 @@
+name: Feature request
+description: Something Nagl should do, or do differently
+title: "Feature: "
+labels: ["feature-request"]
+body:
+  - type: textarea
+    id: want
+    attributes:
+      label: What you would like
+      description: What the app, its core or the graphics layer should do. One feature per request.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What you are trying to do, and what you do today instead. A game or program it is for helps.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Nagl version
+      description: Shown in Nagl > About Nagl.

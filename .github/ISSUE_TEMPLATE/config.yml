@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: How to report a problem
+    url: https://github.com/HariboApfel/Nagl-Releases#reporting-a-problem
+    about: The app writes the report and the scrubbed archive for you.
