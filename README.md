@@ -65,17 +65,25 @@ Have the game's Windows files already, from a Windows PC's Steam folder or an ex
 instead of downloading the whole game again. It checks the files you copy in and fetches only what is missing or
 different.
 
-1. Sign in on the **Steam** page and make a bottle, as in [Getting started](#getting-started).
-2. Choose **Install…** on the game. As soon as the download starts, press **Stop**. Nagl has now made the game's
-   folder in the games folder: `~/Nagl/Games/Steam/steamapps/common/<game folder>`, named the way Steam names it.
-3. In the Finder, copy everything inside your existing game folder (on a Windows PC it is
-   `Steam\steamapps\common\<game folder>`) into that folder, replacing what is there.
-4. Choose **Install…** again. Nagl checks every file against Steam's (**Checking files** in the progress line),
-   downloads only the parts that are missing or differ, and adds the game to the bottle. Checking a big game takes
-   a while, but far less than downloading it.
+1. Sign in on the **Steam** page and make a bottle, as in [Getting started](#getting-started). Note the bottle's
+   name and the game's Steam app id (the number in its store page's address, `store.steampowered.com/app/<id>`).
+2. In the Finder, copy your existing game folder (on a Windows PC it is `Steam\steamapps\common\<game folder>`)
+   into `~/Nagl/Games/Steam/steamapps/common/`, keeping its name. Make the folders if they are not there yet.
+3. Close the game and any Steam running in CrossOver or a bottle, then run this in Terminal with your app id and bottle name:
+
+   ```
+   /Applications/Nagl.app/Contents/Resources/launcher/nagl steam install <app id> --build windows --bottle "<bottle>" --library ~/Nagl/Games/Steam
+   ```
+
+   Nagl checks every file against Steam's, downloads only the parts that are missing or differ, and adds the game
+   to the bottle. Checking a big game takes a while, but far less than downloading it. From then on the game shows
+   on the Steam page as installed, with **Check Files** in its **…** menu.
+
+This works also when another Steam on your Mac, such as CrossOver's, has the game too: the copy in Nagl's games
+folder is the one Nagl plays and updates from then on.
 
 The files have to be the game's Windows version; an older build is fine, since the check brings it up to date. If
-you moved the games folder in Settings, use that folder in place of `~/Nagl/Games`.
+you moved the games folder in Settings, use that folder in place of `~/Nagl/Games` in both places.
 
 ## Disclaimer 
 
