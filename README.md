@@ -1,6 +1,6 @@
 <div align="center">
   <img src="AppIcon.png" alt="Nagl icon" width="160" height="160">
-  <h1>Nagl</h1>
+  <h1>Nagl <sub><sup><b>N</b>ot <b>A</b>nother <b>G</b>ame <b>L</b>auncher</sup></sub></h1>
   <p>
     Windows games on your Mac with Apple silicon.<br>
     Sign in to Steam, install a game into a bottle and play it.
@@ -23,7 +23,7 @@
 
 ## What is Nagl?
 
-Not another Game Launcher, Nagl is a free game launcher for Macs with Apple silicon, in the spirit of CrossOver. Windows programs and games
+Nagl is a free game launcher for Macs with Apple silicon, in the spirit of CrossOver. Windows programs and games
 live in **bottles**, and the app installs, runs and explains them. 
 
 - **Steam inside the app.** Sign in with a QR code, see your library with Mac and Windows badges, and install a game
