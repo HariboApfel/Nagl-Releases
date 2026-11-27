@@ -18,7 +18,7 @@
 
 > **Status: preview.** This repo hosts NAGL preview. The source code is available (see
 > [Source code](#source-code)), and the code repositories themselves become public soonTM. Nagl has
-> been tested on one Mac so far, an M5 Max with macOS 27. Reports from other Macs are the most useful thing you can
+> been tested on M4 and M5 Macs with macOS 27 so far, not yet on M1, M2 or M3. Reports from other Macs are the most useful thing you can
 > send.
 
 ## What is Nagl?
@@ -37,9 +37,7 @@ live in **bottles**, and the app installs, runs and explains them.
 
 ## Requirements
 
-- A Mac with Apple silicon. Intel Macs are not supported. **Untested on M1, M2 and M3 Macs:** every test so far
-  ran on an M5 Max. Nagl may work there, but games may fail to start, show nothing or run worse than on newer
-  chips. If you try it on one, please [report what happened](#reporting-a-problem).
+- A Mac with Apple silicon. Intel Macs are not supported. Works on M4 and M5 Macs; **untested on M1, M2 and M3.**
 - macOS 26 or later; the default ARM64 engine needs macOS 26.4 or later.
 - Steam for Mac, signed in. If it is missing, the app installs it from Valve when you first press **Play**.
 - Rosetta only for bottles of the x86_64 engine (`softwareupdate --install-rosetta`).
