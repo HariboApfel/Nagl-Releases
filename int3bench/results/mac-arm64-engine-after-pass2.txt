@@ -1,0 +1,13 @@
+warmup     threads= 1 n=200 wall_ms=0.4 us_per_event_on_a_thread=2.00 events_per_s_all=499376
+int3       threads= 1 n=20000 wall_ms=11.6 us_per_event_on_a_thread=0.58 events_per_s_all=1723989
+int3       threads= 2 n=20000 wall_ms=16.3 us_per_event_on_a_thread=0.81 events_per_s_all=2455630
+int3       threads= 4 n=20000 wall_ms=42.4 us_per_event_on_a_thread=2.12 events_per_s_all=1887496
+int3       threads= 8 n=20000 wall_ms=137.1 us_per_event_on_a_thread=6.85 events_per_s_all=1167082
+int3       threads=16 n=20000 wall_ms=448.1 us_per_event_on_a_thread=22.40 events_per_s_all=714184
+raise      threads= 1 n=20000 wall_ms=53.7 us_per_event_on_a_thread=2.68 events_per_s_all=372633
+raise      threads= 4 n=20000 wall_ms=362.2 us_per_event_on_a_thread=18.11 events_per_s_all=220881
+raise      threads=16 n=20000 wall_ms=7627.2 us_per_event_on_a_thread=381.36 events_per_s_all=41955
+syscall    threads= 1 n=100000 wall_ms=61.4 us_per_event_on_a_thread=0.61 events_per_s_all=1629482
+syscall    threads= 4 n=100000 wall_ms=143.8 us_per_event_on_a_thread=1.44 events_per_s_all=2781628
+syscall    threads=16 n=100000 wall_ms=731.5 us_per_event_on_a_thread=7.32 events_per_s_all=2187196
+nothing    threads= 1 n=1000000 wall_ms=2.6 us_per_event_on_a_thread=0.00 events_per_s_all=380749293

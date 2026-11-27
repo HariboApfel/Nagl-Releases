@@ -1,0 +1,15 @@
+msync: bootstrapped mach port on wine-1000011-43d5c9a-msync.
+msync: up and running.
+warmup     threads= 1 n=200 wall_ms=0.3 us_per_event_on_a_thread=1.74 events_per_s_all=575043
+int3       threads= 1 n=20000 wall_ms=23.3 us_per_event_on_a_thread=1.16 events_per_s_all=859132
+int3       threads= 2 n=20000 wall_ms=29.9 us_per_event_on_a_thread=1.50 events_per_s_all=1336403
+int3       threads= 4 n=20000 wall_ms=54.4 us_per_event_on_a_thread=2.72 events_per_s_all=1469405
+int3       threads= 8 n=20000 wall_ms=127.4 us_per_event_on_a_thread=6.37 events_per_s_all=1256352
+int3       threads=16 n=20000 wall_ms=387.0 us_per_event_on_a_thread=19.35 events_per_s_all=826971
+raise      threads= 1 n=20000 wall_ms=60.4 us_per_event_on_a_thread=3.02 events_per_s_all=330877
+raise      threads= 4 n=20000 wall_ms=370.1 us_per_event_on_a_thread=18.51 events_per_s_all=216153
+raise      threads=16 n=20000 wall_ms=7680.1 us_per_event_on_a_thread=384.01 events_per_s_all=41666
+syscall    threads= 1 n=100000 wall_ms=60.2 us_per_event_on_a_thread=0.60 events_per_s_all=1659900
+syscall    threads= 4 n=100000 wall_ms=160.7 us_per_event_on_a_thread=1.61 events_per_s_all=2489267
+syscall    threads=16 n=100000 wall_ms=725.6 us_per_event_on_a_thread=7.26 events_per_s_all=2205117
+nothing    threads= 1 n=1000000 wall_ms=1.8 us_per_event_on_a_thread=0.00 events_per_s_all=551693670
