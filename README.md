@@ -59,6 +59,23 @@ bottle keeps its graphics layer until you press **Upgrade** on its page; a new b
 3. Pick a game from your library, choose **Install…**, then press **Play**. The first start of a Direct3D 12 game
    compiles its shaders, which can take a few minutes; later starts reuse them.
 
+## Adding a game you already downloaded
+
+Have the game's Windows files already, from a Windows PC's Steam folder or an external disk? Nagl can use them
+instead of downloading the whole game again. It checks the files you copy in and fetches only what is missing or
+different.
+
+1. Sign in on the **Steam** page and make a bottle, as in [Getting started](#getting-started).
+2. Choose **Install…** on the game. As soon as the download starts, press **Stop**. Nagl has now made the game's
+   folder in the games folder: `~/Nagl/Games/Steam/steamapps/common/<game folder>`, named the way Steam names it.
+3. In the Finder, copy everything inside your existing game folder (on a Windows PC it is
+   `Steam\steamapps\common\<game folder>`) into that folder, replacing what is there.
+4. Choose **Install…** again. Nagl checks every file against Steam's (**Checking files** in the progress line),
+   downloads only the parts that are missing or differ, and adds the game to the bottle. Checking a big game takes
+   a while, but far less than downloading it.
+
+The files have to be the game's Windows version; an older build is fine, since the check brings it up to date. If
+you moved the games folder in Settings, use that folder in place of `~/Nagl/Games`.
 
 ## Disclaimer 
 
