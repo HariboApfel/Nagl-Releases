@@ -16,16 +16,15 @@
   </p>
 </div>
 
-> **Status: preview.** This repository holds Nagl's releases. The source code is available (see
-> [Source code](#source-code)), and the code repositories themselves become public within the next month. Nagl has
+> **Status: preview.** This repo hosts NAGL preview. The source code is available (see
+> [Source code](#source-code)), and the code repositories themselves become public soonTM. Nagl has
 > been tested on one Mac so far, an M5 Max with macOS 27. Reports from other Macs are the most useful thing you can
 > send.
 
 ## What is Nagl?
 
-Nagl is a free game launcher for Macs with Apple silicon, in the spirit of CrossOver. Windows programs and games
-live in **bottles**, and the app installs, runs and explains them. Every layer under the app is its own: the Wine it
-runs, the emulator that translates x86 code, and the Direct3D 12 on Metal that draws the games.
+Not another Game Launcher, Nagl is a free game launcher for Macs with Apple silicon, in the spirit of CrossOver. Windows programs and games
+live in **bottles**, and the app installs, runs and explains them. 
 
 - **Steam inside the app.** Sign in with a QR code, see your library with Mac and Windows badges, and install a game
   into a bottle. Steam for Mac keeps your saves, achievements and DRM working in the background.
@@ -60,6 +59,12 @@ bottle keeps its graphics layer until you press **Upgrade** on its page; a new b
 3. Pick a game from your library, choose **Install…**, then press **Play**. The first start of a Direct3D 12 game
    compiles its shaders, which can take a few minutes; later starts reuse them.
 
+
+## Disclaimer 
+
+Some games may perform worse, might not work OOTB, freeze, crash and burn. Nagl aims to eventually support every windows game you  throw at it (besides stuff with kernel anticheat). Try it out with different games. We are venetually looking for games to perform simmilar/better then on rosetta/d3dmetal. We use it as oracle for performance. 
+
+
 ## AION 2
 
 AION 2 runs on Nagl's default ARM64 engine. Install it from the Steam page into a new bottle with the default
@@ -85,7 +90,7 @@ IP addresses are replaced; save games and Steam credentials are never included).
 ## Source code
 
 Nagl's code is in three repositories (the app, the engines and the graphics layer), which are private for a little
-longer and become public within the next month. Until then, the source is available on request:
+longer and become public soon. Until then, the source is available on request:
 
 **Written offer.** For at least three years from each release, anyone may ask for the complete corresponding source
 of that release: the source of every component in it, at the exact commits it was built from, with the scripts that
